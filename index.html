@@ -15,47 +15,57 @@
     </head>
     <body>
         <header class="center"><nav>Weather Dashboard</nav></header>
-
-        <!-- <div>
-            <div class="smallCard">
-                <div class="card-body">
-                    <h5 class="cardDate">Insert Date Here</h5>
-                    <p class="cardIcon">Insert Weather Icon</p>
-                    <p class="cardTemp">Insert Temperature</p>
-                    <p class="cardWind">Insert Wind</p>
-                    <p class="cardHumidity">Insert Humidity</p>
+        <div class="search">
+                <h2 class="searchHeader">Search for a City:</h2>
+                <input class="searchInput" type="text" id="input" placeholder="Enter city name..."></input>
+                <button type="button" class="btn btn-primary btn-block">City Search</button>
+                <br>
+                <div class="previous"></div>
+        </div>
+        <div class="fivedaycontainer" id="five-day">
+                <div class="currentDay">
+                    <p>x-Add City Name-x || x-Add Current Date-x || x-Add Weather Icon-x</p>
+                    <p>x-Add Temp-x</p>
+                    <p>x-Add Wind-x</p>
+                    <p>x-Add Humidity-x</p>
+                    <p>x-Add UV Index-x</p>
                 </div>
-            </div>
-        </div> -->
-        <div class="container">
-            <div class="row">
-                <div class="column col-4">
-                    <div class="row" id="search-box">
-                        <div class="mb-3">
-                            <label for="city-search" class="form-label"
-                                >City</label
-                            >
-                            <input
-                                type="text"
-                                class="form-control"
-                                id="city-search"
-                            />
-                            <button
-                                type="button"
-                                class="btn btn-primary"
-                                id="search"
-                            >
-                                Search
-                            </button>
-                        </div>
-                    </div>
-                    <div
-                        class="row past-search border"
-                        id="past-search-buttons"
-                    ></div>
+                <h3 class="fiveDayHeader">5-Day Forecast:</h3>
+                <div class="futureDay">
+                    <p>x-Add Day 2-x</p>
+                    <p>x-Add Weather Icon-x</p>
+                    <p>x-Add Temp-x</p>
+                    <p>x-Add Wind-x</p>
+                    <p>x-Add Humidity-x</p>
                 </div>
-                <div class="row col-8" id="weatherBox"></div>
-            </div>
+                <div class="futureDay">
+                    <p>x-Add Day 3-x</p>
+                    <p>x-Add Weather Icon-x</p>
+                    <p>x-Add Temp-x</p>
+                    <p>x-Add Wind-x</p>
+                    <p>x-Add Humidity-x</p>
+                </div>
+                <div class="futureDay">
+                    <p>x-Add Day 4-x</p>
+                    <p>x-Add Weather Icon-x</p>
+                    <p>x-Add Temp-x</p>
+                    <p>x-Add Wind-x</p>
+                    <p>x-Add Humidity-x</p>
+                </div>
+                <div class="futureDay">
+                    <p>x-Add Day 5-x</p>
+                    <p>x-Add Weather Icon-x</p>
+                    <p>x-Add Temp-x</p>
+                    <p>x-Add Wind-x</p>
+                    <p>x-Add Humidity-x</p>
+                </div>
+                <div class="futureDay">
+                    <p>x-Add Day 5-x</p>
+                    <p>x-Add Weather Icon-x</p>
+                    <p>x-Add Temp-x</p>
+                    <p>x-Add Wind-x</p>
+                    <p>x-Add Humidity-x</p>
+                </div>
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>

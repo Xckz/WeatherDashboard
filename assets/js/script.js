@@ -17,41 +17,36 @@ function searchWeatherApi(city) {
         apiKey;
     console.log(apiUrl);
 
-    fetch(apiUrl).then(function (response) {
-        if (response.ok) {
-            response.json().then(function (response) {
-                console.log(response);
-                $("#weatherBox").empty();
+    fetch(apiUrl)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            var weatherArray = [];
 
-                for (var i = 0; i < response.length; i++) {
-                    if (response[i].cod === "200") {
-                        var dateString = moment
-                            .unix(response[i].list.dt)
-                            .format("MM/DD/YYYY");
-                        var icon = response[i].list.weather.icon;
-                        var temperature =
-                            (response[i].list.main.temp * 9) / 5 + 32;
-                        var wind = response[i].list.wind.speed;
-                        var humidity = response[i].list.main.humidity;
-                        var card = buildWeatherCard(
-                            dateString,
-                            icon,
-                            temperature,
-                            wind,
-                            humidity,
-                            i
-                        );
-                        $("#weatherBox").append(card);
-                    }
-                }
-            });
-        } else {
-            alert("ERROR: Enter a valid city.");
-        }
-    });
-}
+            for (i = 0; i < data.length; i++) {
+                var weatherDetails = {
+                    date: data[i].list.dt,
+                    icon: data[i].list.weather.icon,
+                    temperature: data[i].list.main.temp,
+                    wind: data[i].list.wind.speed,
+                    humidity: data[i].list.main.humidity,
+                };
 
-function buildWeatherCard(dateString, icon, temperature, wind, humidity, i) {
+                console.log(weatherDetails);
+                weatherArray.push(weatherDetails);
+            }
+
+            var weatherArrayString = JSON.stringify(weatherArray);
+            window.localStorage.setItem("weather", weatherArrayString);
+
+            window.location.href = "index.html";
+        });
+        
+    
+};
+
+function buildWeatherCard(weather) {
     var weatherCard = $(
         "<div class='p-3 mb-2card' id='card" +
             i +
@@ -74,5 +69,5 @@ function buildWeatherCard(dateString, icon, temperature, wind, humidity, i) {
     cardBody.append(humidEl);
     weatherBody.append(dateEl);
     weatherBody.append(cardEl);
-    return weatherCard;
+    return weatherCard; 
 }

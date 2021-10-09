@@ -25,11 +25,58 @@ nav {
     height: 100px;
 }
 
-.smallCard {
-    background: rgba(0, 212, 255, 1);
-    width: 14rem;
+.search {
+    margin: 0;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 2%;
+    width: 30%;
+    display: flex;
+    float: left;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.row {
+.searchHeader {
+    flex: 0 0 100%;
+}
+
+.searchInput {
+    flex: 0 0 100%;
+}
+
+.searchButton {
+    flex: 0 0 100%;
+}
+
+.previous {
+    flex: 0 0 100%;
+}
+
+.fivedaycontainer {
+    margin: 0;
+    padding-top: 2%;
+    padding-right: 5%;
+    float: right;
+    width: 70%;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.currentDay {
+    border: 1px solid black;
+    flex: 0 0 100%;
+    padding: 2px;
+}
+
+.fiveDayHeader {
+    flex: 0 0 100%;
+}
+
+.futureDay {
+    background: rgba(0, 212, 255, 1);
+    width: 18%;
 }
