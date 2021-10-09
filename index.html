@@ -14,58 +14,18 @@
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
     <body>
-        <header class="center"><nav>Weather Dashboard</nav></header>
+        <header class="center">
+            <nav>Weather Dashboard</nav>
+        </header>
         <div class="search">
+            <div class="searchContainer">
                 <h2 class="searchHeader">Search for a City:</h2>
                 <input class="searchInput" type="text" id="input" placeholder="Enter city name..."></input>
-                <button type="button" class="btn btn-primary btn-block">City Search</button>
-                <br>
-                <div class="previous"></div>
+                <button type="button" class="btn btn-primary btn-block citySearch" id="search">City Search</button>
+                <button type="button" class="btn btn-secondary btn-block previousSearch">Previous Search</button>
+            </div>
         </div>
-        <div class="fivedaycontainer" id="five-day">
-                <div class="currentDay">
-                    <p>x-Add City Name-x || x-Add Current Date-x || x-Add Weather Icon-x</p>
-                    <p>x-Add Temp-x</p>
-                    <p>x-Add Wind-x</p>
-                    <p>x-Add Humidity-x</p>
-                    <p>x-Add UV Index-x</p>
-                </div>
-                <h3 class="fiveDayHeader">5-Day Forecast:</h3>
-                <div class="futureDay">
-                    <p>x-Add Day 2-x</p>
-                    <p>x-Add Weather Icon-x</p>
-                    <p>x-Add Temp-x</p>
-                    <p>x-Add Wind-x</p>
-                    <p>x-Add Humidity-x</p>
-                </div>
-                <div class="futureDay">
-                    <p>x-Add Day 3-x</p>
-                    <p>x-Add Weather Icon-x</p>
-                    <p>x-Add Temp-x</p>
-                    <p>x-Add Wind-x</p>
-                    <p>x-Add Humidity-x</p>
-                </div>
-                <div class="futureDay">
-                    <p>x-Add Day 4-x</p>
-                    <p>x-Add Weather Icon-x</p>
-                    <p>x-Add Temp-x</p>
-                    <p>x-Add Wind-x</p>
-                    <p>x-Add Humidity-x</p>
-                </div>
-                <div class="futureDay">
-                    <p>x-Add Day 5-x</p>
-                    <p>x-Add Weather Icon-x</p>
-                    <p>x-Add Temp-x</p>
-                    <p>x-Add Wind-x</p>
-                    <p>x-Add Humidity-x</p>
-                </div>
-                <div class="futureDay">
-                    <p>x-Add Day 5-x</p>
-                    <p>x-Add Weather Icon-x</p>
-                    <p>x-Add Temp-x</p>
-                    <p>x-Add Wind-x</p>
-                    <p>x-Add Humidity-x</p>
-                </div>
+        <div class="fiveDayContainer" id="five-day">
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>

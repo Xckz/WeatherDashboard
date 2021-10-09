@@ -25,44 +25,45 @@ nav {
     height: 100px;
 }
 
-.search {
+.searchContainer {
     margin: 0;
     padding-top: 2%;
     padding-left: 5%;
     padding-right: 2%;
-    width: 30%;
-    display: flex;
     float: left;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
+    width: 30%;
+    height: 80vh;
+    display: flex;
+    flex-flow: column wrap;
 }
 
 .searchHeader {
-    flex: 0 0 100%;
+    margin-bottom: 15px;
 }
 
 .searchInput {
-    flex: 0 0 100%;
+    margin-bottom: 15px;
+    height: 45px;
 }
 
-.searchButton {
-    flex: 0 0 100%;
+.citySearch {
+    border-bottom: 4px solid rgba(9, 9, 121, 1);
+    padding-bottom: 4px;
+    margin-bottom: 15px;
 }
 
-.previous {
-    flex: 0 0 100%;
+.previousSearch {
+    margin-bottom: 10px;
 }
 
-.fivedaycontainer {
+.fiveDayContainer {
     margin: 0;
     padding-top: 2%;
     padding-right: 5%;
     float: right;
     width: 70%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-between;
 }
 
@@ -70,6 +71,7 @@ nav {
     border: 1px solid black;
     flex: 0 0 100%;
     padding: 2px;
+    margin-bottom: 10px;
 }
 
 .fiveDayHeader {
