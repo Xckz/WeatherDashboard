@@ -31,10 +31,12 @@ nav {
     padding-left: 5%;
     padding-right: 2%;
     float: left;
-    width: 30%;
+    width: 25%;
     height: 80vh;
     display: flex;
     flex-flow: column wrap;
+
+    border-right: 1px solid rgba(9, 9, 121, 1);
 }
 
 .searchHeader {
@@ -61,7 +63,7 @@ nav {
     padding-top: 2%;
     padding-right: 5%;
     float: right;
-    width: 70%;
+    width: 75%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -80,5 +82,17 @@ nav {
 
 .futureDay {
     background: rgba(0, 212, 255, 1);
-    width: 18%;
+    width: 15%;
+}
+
+.red {
+    background: red;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.green {
+    background: green;
 }
