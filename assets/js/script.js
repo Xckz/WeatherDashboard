@@ -87,8 +87,10 @@ function displayCurrentDay(resultObj) {
 
     var tempEl = document.createElement("p");
     tempEl.textContent = "Temp: " + resultObj.temp.day + "°F";
+
     var windEl = document.createElement("p");
     windEl.textContent = "Wind Speed: " + resultObj.wind_speed + " MPH";
+
     var humidEl = document.createAttribute("p");
     humidEl.textContent = "Humidity: " + resultObj.humidity + " %";
 
